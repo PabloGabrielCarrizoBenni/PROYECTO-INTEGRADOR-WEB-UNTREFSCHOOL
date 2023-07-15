@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2? family= Belanosima:wght@400;600;700 & family= Poppins:ital,wght@0,200;0,500;0,800;1,200;1,500; 1.800 & mostrar=intercambiar");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Belanosima", sans-serif;
+}
+
+h1 {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+  color: #00425a;
+}
+
+li {
+  list-style: none;
+}
+
+.navegador {
+  background-color: #eff5f5;
+}
+
+.navegador-header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1f8a70;
+}
+
+.menu-mobil {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  position: absolute;
+  background-color: #eff5f5;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+.navbar-link {
+  color: #1f8a70;
+}
+
+#navegador-header:target .navbar-container {
+  height: 300px;
+}
+
+#navegador-header:target .abrir {
+  display: none;
+}
+
+#navegador-header:target .cerrar {
+  display: flex;
+}
+
+.cerrar {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .navegador {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1f8a70;
+  }
+  .navbar-container {
+    height: auto;
+    flex-direction: row;
+    position: static;
+    width: 60%;
+  }
+  .menu-mobil {
+    display: none;
+  }
+  .navegador-header {
+    border-bottom: none;
+  }
+  .navbar-item {
+    text-align: center;
+  }
+}
