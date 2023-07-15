@@ -17,6 +17,11 @@ h2 {
   font-weight: 400;
 }
 
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
 a {
   text-decoration: none;
   font-family: "Belanosima", sans-serif;
@@ -37,7 +42,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #1f8a70;
+  border-bottom: 5px solid #1f8a70;
 }
 
 .menu-mobil {
@@ -99,11 +104,82 @@ li {
   text-shadow: 0 0 5px black;
 }
 
+.contenedor-quienessomos {
+  width: 100%;
+  height: auto;
+  background-color:#00425a;
+  text-align: center;
+  color: #eff5f5;
+  padding: 10%;
+  
+}
+
+.contenedor-porqueelegirnos {
+  width: 100%;
+  height: auto;
+  background-color:#1f8a70;
+  text-align: center;
+  color: #eff5f5;
+  padding: 10%;
+}
+
+.contenedor-propuestaeducativa {
+  width: 100%;
+  height: auto;
+  background-color:#00425a;
+  text-align: center;
+  color: #eff5f5;
+  padding: 10%;
+  
+}
+
+.contenedor-ultimasnoticias {
+  width: 100%;
+  height: auto;
+  background-color:#eff5f5;
+  text-align: center;
+  color: #185f4c;
+  padding: 5%;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #181823;
+  text-align: center;
+  color: #eff5f5;
+  padding: 5%;
+}
+
+#redes-sociales{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 90%;
+  margin: 5%;
+}
+
+#redes-sociales svg {
+  width: 100%;
+  transition: all 300ms;
+  position: relative;
+}
+
+#contactos {
+  display: grid;
+  grid-template-columns: repeat(1,2fr);
+  width: 90%;
+  margin: 5%;
+}
+
+#contactos a {
+  color: #FC7300;
+}
+
 @media (min-width: 768px) {
   .navegador {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #1f8a70;
+    border-bottom: 5px solid #1f8a70;
   }
   .navbar-container {
     height: auto;
@@ -111,7 +187,7 @@ li {
     position: static;
     width: 60%;
   }
-  .menu-mobil {
+  .menu-cel {
     display: none;
   }
   .navegador-header {
@@ -135,4 +211,12 @@ li {
     color: #ff7300;
     top: 50%;
   } 
+
+  #redes-sociales svg:hover {
+    transform: scale(1.15);
+  }
+
+  #contactos a:hover {
+    color: #f4ad73;
+  }
 }
