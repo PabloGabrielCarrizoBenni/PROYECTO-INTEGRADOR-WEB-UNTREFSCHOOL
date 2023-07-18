@@ -10,16 +10,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2? family= Belanosima:wght@400;600;700 & family= Poppins:ital,wght@0,200;0,500;0,800;1,200;1,500; 1.800 & mostrar=intercambiar");
-    </style>
-  </head>
+    </head>
   <body>
     <nav class="navegador" id="navegador-header">
       <header class="navegador-header">
         <a href="index.html">
           <img
-            src="imagenes/logo-utrefschool.jpg"
+            src="imagenes/logo-utrefschool-svg.svg"
             alt="logotipo UNTREFSCHOOL"
             class="logo-untrefschool"
             width="200px"
@@ -34,28 +31,29 @@
         <form
           action="https://formsubmit.co/pcarrizobenni@gmail.com"
           method="post"
-          enctype="text/plain"
-        >
-          <label for="nombre">Nombre y Apellido:</label>
-          <input type="text" id="nombre" name="nombre" required />
+          enctype="text/plain">
 
-          <label for="correo">Correo:</label>
-          <input type="email" id="correo" name="correo" required />
+          <label for="nombre">Nombre y Apellido</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre completo."/>
+        
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required placeholder="Escribe tu correo electrónico."/>
 
-          <label for="asunto">Asunto:</label>
-          <input type="text" id="asunto" name="asunto" required />
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" required maxlength="50" placeholder="Escribe el asunto (Max. 50 caracteres)"/>
 
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje (Max. 1000 caracteres)" maxlength="1000"></textarea>
 
-          <input type="submit" value="Enviar" />
+          <input type="submit" value="ENVIAR" />
         </form>
       </div>
       <br />
     </main>
     <footer>
         <div class="footer-formulario">
-            <p>¡Gracias por contactarnos!</p>
+            <p>¡GRACIAS POR CONTACTARNOS!</p>
+            <p> En breve nos comunicaremos con usted.</p>
         </div>
     </footer>
   </body>
