@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,200;0,500;0,800;1,200;1,500;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Poppins:ital,wght@0,200;0,500;0,800;1,200;1,500;1,800&display=swap");
 
 * {
   margin: 0%;
@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
 
@@ -31,6 +31,10 @@ a {
 
 li {
   list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navegador {
@@ -91,12 +95,12 @@ li {
   height: 14rem;
   background-image: url(imagenes/aula-untrefschool.jpg);
   background-attachment: fixed;
-  background-size: 150% ;
+  background-size: 150%;
 }
 
-.contenedor-titulo h1 { 
+.contenedor-titulo h1 {
   font-size: 2.5rem;
-  color: #FC7300;
+  color: #fc7300;
   position: absolute;
   top: 25%;
   left: 50%;
@@ -107,7 +111,7 @@ li {
 .contenedor-quienessomos {
   width: 100%;
   height: auto;
-  background-color:#00425a;
+  background-color: #00425a;
   text-align: center;
   color: #eff5f5;
   padding: 10%;
@@ -116,7 +120,7 @@ li {
 .contenedor-porqueelegirnos {
   width: 100%;
   height: auto;
-  background-color:#1f8a70;
+  background-color: #1f8a70;
   text-align: center;
   color: #eff5f5;
   padding: 10%;
@@ -125,16 +129,53 @@ li {
 .contenedor-propuestaeducativa {
   width: 100%;
   height: auto;
-  background-color:#00425a;
+  background-color: #00425a;
   text-align: center;
   color: #eff5f5;
-  padding: 10%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.educacion-bilingue {
+  background-color: #eff5f5;
+  padding: 30px 30px;
+  color: #fc7300;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 3%;
+}
+
+.educacion-deportiva {
+  background-color: #eff5f5;
+  padding: 30px 30px;
+  color: #fc7300;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 3%;
+}
+
+.educacion-sostenible {
+  background-color: #eff5f5;
+  padding: 30px 30px;
+  color: #fc7300;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 3%;
 }
 
 .contenedor-ultimasnoticias {
   width: 100%;
   height: auto;
-  background-color:#eff5f5;
+  background-color: #eff5f5;
   text-align: center;
   color: #185f4c;
   padding: 5%;
@@ -149,9 +190,9 @@ li {
   padding: 5%;
 }
 
-#redes-sociales{
+#redes-sociales {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 90%;
   margin: 5%;
 }
@@ -164,20 +205,20 @@ li {
 
 #contactos {
   display: grid;
-  grid-template-columns: repeat(1,2fr);
+  grid-template-columns: repeat(1, 2fr);
   width: 90%;
   margin: 5%;
 }
 
 #contactos a {
-  color: #FC7300;
+  color: #fc7300;
 }
 
 #boton-escribenos {
   display: inline;
   padding: 10px 20px;
   color: #eff5f5;
-  background-color: #FC7300;  
+  background-color: #fc7300;
   font-family: "Belanosima", sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -186,7 +227,7 @@ li {
 
 .contenedor-formulario-de-contacto {
   width: 100%;
-  background-color: #181823 ; 
+  background-color: #181823;
   max-height: 100%;
 }
 
@@ -202,7 +243,6 @@ li {
   padding: 40px;
   border-radius: 5px;
   box-shadow: 0 0 5px;
-  
 }
 
 .formulario-contacto input[type="text"],
@@ -213,7 +253,7 @@ li {
   margin-bottom: 20px;
   border: 1px solid #000000;
   border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
 
@@ -226,7 +266,6 @@ li {
   border-radius: 10px;
   display: flex;
   align-items: center;
-  
 }
 
 .footer-formulario {
@@ -258,21 +297,21 @@ li {
   .navbar-item {
     text-align: center;
   }
-  .navbar-link:hover{
-    color:#185f4c;
+  .navbar-link:hover {
+    color: #185f4c;
     font-weight: 600;
-  } 
+  }
 
   .contenedor-titulo {
     height: 40rem;
-    background-size:cover;
+    background-size: cover;
   }
-    
-  .contenedor-titulo h1{
+
+  .contenedor-titulo h1 {
     font-size: 6em;
     color: #ff7300;
     top: 50%;
-  } 
+  }
 
   #redes-sociales svg:hover {
     transform: scale(1.15);
@@ -290,4 +329,25 @@ li {
   }
   .formulario-contacto {
     max-width: 600px;
+  }
+
+  .contenedor-propuestaeducativa {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .contenedor-propuestaeducativa h1 {
+    display: block;
+  }
+
+  .contenedor-propuestaeducativa img {
+    width: 10em;
+  }
+
+  .propuestaseducativas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
 }
