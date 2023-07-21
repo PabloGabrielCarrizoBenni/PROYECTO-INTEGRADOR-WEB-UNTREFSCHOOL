@@ -160,6 +160,24 @@ html {
   padding: 5%;
 }
 
+.noticias img {
+width: 100%;
+border-radius: 10px;
+margin-bottom: 5%;
+}
+
+.noticias {
+  border: solid #1f8a70;
+  padding: 5% 5%;
+  color: #181823;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.noticias p {
+  text-align: justify;
+}
+
 .footer {
   width: 100%;
   height: auto;
@@ -345,6 +363,19 @@ html {
   padding: 20px 20px;
   margin: 3% 3%;
   }
+
+  .article-noticias  {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .article-noticias div {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 2%;
+  }
+  
 
   #redes-sociales img:hover {
     transform: scale(1.4);
