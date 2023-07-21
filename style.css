@@ -92,7 +92,7 @@ html {
 
 .contenedor-titulo {
   width: 100%;
-  height: 14rem;
+  height: 12rem;
   background-image: url(imagenes/aula-untrefschool.jpg);
   background-attachment: fixed;
   background-size: 150%;
@@ -290,6 +290,62 @@ html {
     top: 50%;
   }
 
+  #quienes-somos {
+    padding: 5%;
+    text-align: right;
+  }
+
+  #quienes-somos img {
+    width: 300px;
+    margin-right: 10%;
+  }
+
+  .article-quienessomos {
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+
+  #por-que-elegirnos {
+    padding: 5%;
+    text-align: left;
+  }
+
+  #por-que-elegirnos img {
+    width: 300px;
+    margin-left: 10%;
+  }
+
+  .article-porqueelegirnos {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+  }
+
+  #propuesta-educativa {
+    height: auto;
+    flex-direction: column;
+  }
+
+  #propuesta-educativa img {
+    width: 10em;
+    margin: 0 auto;
+  }
+
+  .propuestaseducativas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .educacion-bilingue,
+  .educacion-deportiva,
+  .educacion-sostenible {
+  padding: 20px 20px;
+  margin: 3% 3%;
+  }
+
   #redes-sociales img:hover {
     transform: scale(1.4);
   }
@@ -307,30 +363,6 @@ html {
   .formulario-contacto {
     max-width: 600px;
   }
-
-  #propuesta-educativa {
-    height: auto;
-    flex-direction: column;
-  }
-
-    #propuesta-educativa img {
-    width: 10em;
-    margin: 0 auto;
-  }
-
-  .propuestaseducativas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .educacion-bilingue,
-  .educacion-deportiva,
-  .educacion-sostenible {
-  padding: 20px 20px;
-  margin: 3% 3%;
-}
-
   .contenedor-redes {
     display: flex;
     justify-content: space-between;
