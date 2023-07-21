@@ -108,7 +108,7 @@ html {
   text-shadow: 0 0 5px black;
 }
 
-.contenedor-quienessomos {
+#quienes-somos {
   width: 100%;
   height: auto;
   background-color: #00425a;
@@ -117,7 +117,7 @@ html {
   padding: 10%;
 }
 
-.contenedor-porqueelegirnos {
+#por-que-elegirnos {
   width: 100%;
   height: auto;
   background-color: #1f8a70;
@@ -126,7 +126,7 @@ html {
   padding: 10%;
 }
 
-.contenedor-propuestaeducativa {
+#propuesta-educativa {
   width: 100%;
   height: auto;
   background-color: #00425a;
@@ -136,31 +136,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  
 }
 
-.educacion-bilingue {
-  background-color: #eff5f5;
-  padding: 30px 30px;
-  color: #fc7300;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 3%;
-}
-
-.educacion-deportiva {
-  background-color: #eff5f5;
-  padding: 30px 30px;
-  color: #fc7300;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 3%;
-}
-
+.educacion-bilingue,
+.educacion-deportiva,
 .educacion-sostenible {
   background-color: #eff5f5;
   padding: 30px 30px;
@@ -169,10 +148,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 3%;
+  margin: 10%;
 }
 
-.contenedor-ultimasnoticias {
+#ultimas-noticias {
   width: 100%;
   height: auto;
   background-color: #eff5f5;
@@ -197,10 +176,8 @@ html {
   margin: 5%;
 }
 
-#redes-sociales svg {
-  width: 100%;
+#redes-sociales img {
   transition: all 300ms;
-  position: relative;
 }
 
 #contactos {
@@ -313,8 +290,8 @@ html {
     top: 50%;
   }
 
-  #redes-sociales svg:hover {
-    transform: scale(1.15);
+  #redes-sociales img:hover {
+    transform: scale(1.4);
   }
 
   #contactos a:hover {
@@ -331,23 +308,55 @@ html {
     max-width: 600px;
   }
 
-  .contenedor-propuestaeducativa {
+  #propuesta-educativa {
     height: auto;
     flex-direction: column;
   }
 
-  .contenedor-propuestaeducativa h1 {
-    display: block;
-  }
-
-  .contenedor-propuestaeducativa img {
+    #propuesta-educativa img {
     width: 10em;
+    margin: 0 auto;
   }
 
   .propuestaseducativas {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
   }
 
+  .educacion-bilingue,
+  .educacion-deportiva,
+  .educacion-sostenible {
+  padding: 20px 20px;
+  margin: 3% 3%;
+}
+
+  .contenedor-redes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contenedor-contacto,
+  .contenedor-institucion,
+  .contenedor-redessociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-redes div {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .footer {
+    padding: 2%;
+  }
+
+  #contactos {
+    align-content: center;
+  }
+
+  #redes-sociales {
+    align-items: center;
+    width: 70%;
+  }
 }
